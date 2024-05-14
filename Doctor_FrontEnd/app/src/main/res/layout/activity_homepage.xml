@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomepageActivity">
+    <LinearLayout
+        android:id="@+id/firstrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/firstlayoutrow"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButtonPersonalInformation"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:src="@drawable/view_information"></ImageButton>
+
+            <Button
+                android:id="@+id/ButtonPersonalInformation"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:text="Personal Information"
+                android:textColor="@color/black"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondlayoutrow"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageAppointment"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:src="@drawable/appointment"></ImageButton>
+
+            <Button
+                android:id="@+id/ButtonAppointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:text="Appointment"
+                android:textColor="@color/black"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/firstrow">
+
+        <LinearLayout
+            android:id="@+id/firstlayoutsecondrow"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButtonPatientInformation"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:src="@drawable/patient_infomation"></ImageButton>
+
+            <Button
+                android:id="@+id/ButtonPatientInformation"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:text="Patient Information"
+                android:textColor="@color/black"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondlayoutsecondrow"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imagePatientHealthRecord"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:src="@drawable/patient_health_record"></ImageButton>
+
+            <Button
+                android:id="@+id/PatientHealthRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:text="Patient Health Record"
+                android:textColor="@color/black"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/secondrow">
+
+        <LinearLayout
+            android:id="@+id/firstlayoutthirdrow"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButtonPatientPrescriptionInformation"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:src="@drawable/patient_prescription"></ImageButton>
+
+            <Button
+                android:id="@+id/ButtonPatientPrescriptionInformation"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:text="Patient Prescription"
+                android:textColor="@color/black"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondlayouthirdtrow"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageManageTherapeutic"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:src="@drawable/manage_therapeutic"></ImageButton>
+
+            <Button
+                android:id="@+id/ButtonManageTherapeutic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:text="Manage Therapeutic"
+                android:textColor="@color/black"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

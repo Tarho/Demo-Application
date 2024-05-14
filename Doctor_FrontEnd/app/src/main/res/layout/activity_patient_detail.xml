@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PatientDetail">
+
+    <LinearLayout
+        android:id="@+id/firstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/patient_ava"></ImageView>
+
+        <TextView
+            android:id="@+id/PatientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Name"
+            android:textSize="45dp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/firstlayout">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Date of birth"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/DateOfBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18/03/2001"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/secondlayout">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ho Chi Minh city"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourthlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/thirdlayout">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/fourthlayout">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Phone number"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/PhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0123456789"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
